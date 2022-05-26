@@ -4,16 +4,16 @@
 \alias{slugify}
 \title{Slugify a string to remove characters that can cause problems}
 \usage{
-slugify(x, alphanum_replace = "", space_replace = "_", tolower = TRUE)
+slugify(x, non_alphanum_replace = "", space_replace = "_", tolower = TRUE)
 }
 \arguments{
 \item{x}{a string}
 
-\item{alphanum_replace}{character to replace non-alphanumeric characters}
+\item{non_alphanum_replace}{character to replace non-alphanumeric characters (Default: "")}
 
-\item{space_replace}{character to replace spaces}
+\item{space_replace}{character to replace spaces (Default: "_")}
 
-\item{tolower}{boolean, run towlower()?}
+\item{tolower}{boolean, run towlower()? (Default: TRUE)}
 }
 \value{
 a string with replacements
@@ -23,8 +23,7 @@ Slugify a string to remove characters that can cause problems
 }
 \examples{
 slugify("HELLO WORLD!!!")
+slugify("HELLO+WORLD", non_alphanum_replace="_")
 
 }
-\concept{
-slugify
-}
+\concept{slugify}

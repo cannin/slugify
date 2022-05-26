@@ -1,8 +1,8 @@
 Package: slugify
 Title: Slugify
 Description: Takes a string and makes a user friendly and URL valid string.
-Version: 0.0.1
-Date: 2018-12-09
+Version: 0.0.2
+Date: 2021-05-26
 Author: Augustin Luna
 Maintainer: Augustin Luna <lunaa@cbio.mskcc.org>
 Depends:
@@ -12,4 +12,4 @@ Suggests:
     knitr
 VignetteBuilder:
     knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.2
